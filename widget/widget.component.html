@@ -1,0 +1,218 @@
+<!-- <div class="weather-cont" >
+    
+
+    
+    <div class="topBoxWether">
+        <input  type="text" [(ngModel)]="inputCityValue" class="inputSearch" id="inputCiy" placeholder="Your City"/>
+        <i  (click)="onClickSearch()"   class='bx bx-search-alt search' style='color:#fafdfe' ></i>
+    </div>
+    <div>
+        <div class="weatherBlock"> -->
+            <!-- <img class="weatherStan" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2Ir5OTCMm42wxpOTwcQtaziDcVt8LxfVZEw&s"> -->
+            <!-- <i class='bx bxs-sun bx-tada bx-rotate-270' id="weatherStan"></i> -->
+<!--            
+            <i [ngClass]="weatherIcon" class="bx bx-flashing" id="weatherStan"></i>
+            <i  *ngIf="isLoader"  class='bx bx-loader bx-rotate-180 bx-spin' style='color:#38393a'  id="weatherStan"></i>
+           
+        </div>
+        <div class="curentTemp">
+            <h2 style="font-size:1.7rem" id="temp">
+                    {{currentTemp}}<span style="font-size:0.9rem">°C</span>
+            </h2>
+            <h3>{{myCity}}</h3>
+            <h3 >
+                {{weatherDescrip}}
+            </h3>
+        </div>
+    </div>
+    <div class="contWeek">
+        <div *ngFor="let day of weatherDays" class="weather-day" [ngClass]="{ 'today': isToday(day.date) }">
+            <span>{{ day.day }}</span>
+            <i [ngClass]="day.icon" class="bx"></i>
+            <div>
+              <span id="maxTemp">{{ day.maxTemp }}°</span>
+              <span class="minTemp" id="minTemp">{{ day.minTemp }}°</span>
+            </div>
+          </div>
+
+    </div>
+    
+      
+<div class="boxFotW">
+    <div class="boxPar">
+        <i class='bx bx-water' style='color:#0091cb' ></i>
+        <div class="humD">
+            <span>{{humidityPrct}}%</span>
+            <span>Humadity</span>
+        </div>
+
+    </div>
+    <div class="boxPar">
+        <i class='bx bx-wind' style='color:#00283b' ></i>
+        <div class="humD">
+            <span>{{windSpeed}}Km/h</span>
+            <span>Wind speed</span>
+        </div>
+
+    </div>
+</div>
+
+</div> -->
+
+<section  class="main-block">
+    <!-- <img src="https://cdn-icons-png.flaticon.com/128/4088/4088981.png"> -->
+  
+
+
+        <div class="first-line">
+            <div class="wrapper">
+                <div class="first-block dark-mode-shadow">
+                        <div class="block-text">
+                            <input  type="text" [(ngModel)]="inputCityValue" class="inputSearch" id="inputCiy" placeholder="Your City"/>
+                            <i  (click)="onClickSearch()"   class='bx bx-search-alt search' style='color:#fafdfe' ></i>
+                        </div>
+                        <div class="line"></div>
+                </div>
+                <div class="block-bottom dark-mode-shadow">
+                        <div class="contWeek">
+                            <div *ngFor="let day of weatherDays" class="weather-day" [ngClass]="{ 'today': isToday(day.date) }">
+                                    <span>{{ day.day }}</span>
+                                    <img [src]="day.icon" alt="Weather Icon for {{ day.day }}"  style="height: 2.5rem;"/>
+                            <div>
+                                <span id="maxTemp">{{ day.maxTemp }}°</span>
+                                <span class="minTemp" id="minTemp">{{ day.minTemp }}°</span>
+                        </div>
+                </div>
+        
+            </div>
+        </div>
+        </div>
+
+        <div class="wrapper-second pulse-grow block1 dark-mode-shadow ">
+            <div class="block-second ">
+                <div class="top-second">
+                    <span> {{myCity}}</span>
+                    <span>16:00</span>
+
+                </div>
+                <div class="block-weatherC  ">
+                    <img [src]="getUpdateIcon(weatherState)" alt="Weather Icon" id="weatherStan" />
+
+                    <span style="margin-top:4%">{{weatherDescrip}}</span>
+                </div>
+                <div style="text-align: center;margin-top:10%;font-size:1.9rem;text-align:start" >
+                    
+                    {{currentTemp}}<span style="font-size:0.9rem">°C</span>
+                     
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="wrapper-second pulse-grow block2 dark-mode-shadow">
+            <div class="block-second">
+                <div style="text-align: center;font-size:1.3rem;text-align:center" >
+                    Metrics
+                 </div>
+                <div class="metricks">
+                   <img src="https://cdn-icons-png.flaticon.com/128/13137/13137039.png">
+                   <span>{{humidityPrct}}%</span>
+
+                </div>
+              
+                <div class="metricks" style="margin-top:10%" >
+                    <img src="https://cdn-icons-png.flaticon.com/128/17190/17190636.png">
+                    <span>{{windSpeed}}Km/h</span>
+                     
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="wrapper-second pulse-grow block3 dark-mode-shadow">
+            <div class="block-second">
+                <div class="top-second">
+                    Real-time & interconnects
+                </div>
+                <div class="block-weatherC">
+                   
+                    <img src="https://cdn-icons-png.flaticon.com/128/11938/11938330.png">
+                    
+                </div>
+                <div style="text-align: center;margin-top:10%;font-size:1.9rem;text-align:center" >
+                    
+                   
+                   Service
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="second-line">
+        <div class="crypto-block">
+            <div class="search-crypto dark-mode-shadow">
+                <div class="search-crypto-box">
+                    <input placeholder="Search.." [(ngModel)]="inputCryptoValue" id="inputCrypto">
+                    <i class='bx bx-search ' style='color:#ffffff;font-size: 2rem;'  id="searchCrypto" (click)="onSearchCrypto()"></i>
+                    
+                </div>
+            </div>
+            <div class="first-block-crypto">
+                    <div class="crypto-inform dark-mode-shadow ">
+                  
+                                 <div class="box-price">{{ crypto.priceUsd | number:'1.2-2' }}<span><i class='bx bx-dollar bx-flashing bx-rotate-180' style='color:#00ff7a;font-size:1.3rem' ></i></span></div>
+                                <img src="https://assets.coingecko.com/coins/images/825/standard/bnb-icon2_2x.png?1696501970"
+                                alt="Shiba Inu" />
+
+                </div>
+                <div class="right-blockCr dark-mode-shadow">
+                    <img src="https://cdn.pixabay.com/animation/2023/05/04/21/21/21-21-36-407_512.gif">
+                </div>
+
+            </div>
+            <div class="crypto-bottom dark-mode-shadow">
+                <div class="banner">
+                    <div class="marquee">
+                        <div class="container">
+                            <div *ngFor="let currency of allCurency.slice(0, 20)" class="box-crypto" >
+                                <img [src]="currency.imageUrl" alt="{{ currency.name }}" />
+                                <div class="box-price">{{ currency.priceUsd  | number:'1.2-2'}}<span><i class='bx bx-dollar bx-rotate-180 bx-tada' style='color:#00ff7a'  ></i></span></div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="box-digital">
+            <div class="first-lineD">
+                <div class="telegram pulse-grow dark-mode-shadow" (click)="onClickT()">
+                    <img src="https://cdn-icons-png.flaticon.com/128/3698/3698710.png">
+
+                </div>
+                <div class="instagram pulse-grow dark-mode-shadow" (click)="onClickT()">
+                  <img src="https://cdn-icons-png.freepik.com/256/3955/3955024.png?ga=GA1.1.1831980044.1724277234&semt=ais_hybrid"> 
+
+                </div>
+                <div class="instagram pulse-grow dark-mode-shadow" >
+                    <img src="https://cdn-icons-png.freepik.com/256/5202/5202174.png?ga=GA1.1.1831980044.1724277234&semt=ais_hybrid"> 
+  
+                  </div>
+                
+            </div>
+            <div class="digital-bottom dark-mode-shadow">
+               
+                <img src="https://cdn-icons-png.freepik.com/256/10296/10296460.png?ga=GA1.1.1831980044.1724277234&semt=ais_hybrid">
+            </div>
+
+        </div>
+        <div class="box-music">
+            <app-mp3></app-mp3>
+        </div>
+    </div>
+</section> 

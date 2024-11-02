@@ -1,0 +1,26 @@
+.box{
+    background-image: url("https://img.freepik.com/premium-photo/colorful-aesthetic-greek-statue_950633-1561.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 2%;
+    box-shadow: 0px -2px 20px 20px #d6ffd6;
+}
+
+.mybt{
+    float: right;
+    width: 25%;
+  
+}
+.col1{
+    color: #003602;
+    font-size: 1.5rem;
+}
+.col2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5rem;
+    color:#c6fdc8
+}

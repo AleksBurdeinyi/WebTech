@@ -1,0 +1,235 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
+.menu-top{
+
+    backdrop-filter: blur(4px);
+   
+    
+    padding: 0.7%;
+  }
+  .block-text dt:hover{
+    cursor: pointer;
+    color: #38B7E6;
+  
+  }
+  .bar-block{
+    display: flex;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1.9rem;
+   
+    justify-content: space-around;
+    z-index: 1;
+    align-items: center;
+}
+.container{
+  margin-top: 5%;
+}
+
+
+ul {
+  -moz-column-count: 3;
+  -moz-column-gap: 50px;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 50px;
+  column-count: 3;
+  column-gap: 50px;
+}
+
+li {
+  overflow: hidden;
+}
+
+.container {
+  max-width: 960px;
+}
+
+/*
+ * Custom translucent site header
+ */
+
+.site-header {
+  background-color: rgba(0, 0, 0, .85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.site-header a {
+  color: #999;
+  transition: ease-in-out color .15s;
+}
+.site-header a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*
+ * Dummy devices (replace them with your own or something else entirely!)
+ */
+
+.product-device {
+  position: absolute;
+  right: 10%;
+  bottom: -30%;
+  width: 300px;
+  height: 540px;
+  background-color: #333;
+  border-radius: 21px;
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+.product-device::before {
+  position: absolute;
+  top: 10%;
+  right: 10px;
+  bottom: 10%;
+  left: 10px;
+  content: "";
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: 5px;
+}
+
+.product-device-2 {
+  top: -25%;
+  right: auto;
+  bottom: 0;
+  left: 5%;
+  background-color: #e5e5e5;
+}
+
+
+/*
+ * Extra utilities
+ */
+
+.flex-equal > * {
+  -ms-flex: 1;
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
+
+.overflow-hidden { overflow: hidden; }
+
+.bg-dark {
+  --bs-bg-opacity: 1;
+  background-color: rgb(35 0 86) !important;
+}
+.bg{
+  background-image: url("https://static.vecteezy.com/system/resources/previews/021/968/058/non_2x/multicolor-gradient-with-clouds-for-poster-presentation-website-design-concept-blank-space-for-text-illustration-vector.jpg");
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    background-color: #130c27;
+    background-size: 50% 100%;
+}
+.product-device {
+  background-color: #030303;
+}
+.product-device-2::before {
+  background-color: transparent; /* Видаляє фоновий колір перед елементом */
+  background-image: url("https://t4.ftcdn.net/jpg/08/93/58/25/240_F_893582505_KbzB9GQGSOzpPa37TId03uLjmnCCsRhr.jpg");
+}
+.product-device-1::before {
+  background-color: #ffffff00;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKzdJ7yjEUNb_FCRavlno-znX74Lj8-ONI1w&s");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    background-position-y: 4rem;
+  
+    box-shadow: 1px -20px 7px -6px #bdc4e9;
+}
+
+
+.product-device-2{
+  top: -50%;
+}
+.product-device{
+  bottom: -50%;
+}
+/* .img1{
+  background-image: url("https://snapshot.internetx.com/wp-content/uploads/2023/04/crypto-and-nft-two-trending-keywords-in-domain-names-an-analysis-thumbnail.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+} */
+.img1{
+  background-image: url("https://images5.alphacoders.com/132/1327980.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.img2{
+  background-image: url("https://cimg.co/wp-content/uploads/2024/09/09162411/1725899051-nodes-in-crypto.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.img3{
+  background-image: url("https://miro.medium.com/v2/resize:fit:1400/1*l4nzIepzN6HkfO5dxynaTA.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.img4{
+  background-image: url("https://img.freepik.com/premium-photo/creative-3d-local-honeybee-pollination-market-illustrating-ess-business-model-advertisement_1020495-15720.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.img5{
+  background-image: url("https://topdev.vn/blog/wp-content/uploads/2023/10/Typescript.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.img6{
+  background-image: url("https://img.freepik.com/premium-photo/creative-3d-local-honeybee-pollination-market-illustrating-ess-business-model-advertisement_1020495-15720.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.img7{
+  background-image: url("https://fox.agency/wp-content/uploads/2023/03/NFT_blog_image_1920x960px.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.img7{
+  background-image: url("https://fox.agency/wp-content/uploads/2023/03/NFT_blog_image_1920x960px.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.img8{
+  background-image: url("https://narrato.io/blog/wp-content/uploads/2023/02/Content-Marketing-Case-Study-Airtable-8.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hover-container {
+  cursor: pointer;
+}
+.hover-text {
+  background-color: #4d1d80a8;
+  padding: 10px;
+  border-radius: 21px 21px 0 0;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 2.3s ease;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.hover-container:hover .hover-text {
+    opacity: 1; 
+    pointer-events: auto; /* Дозволяємо взаємодію з текстом */
+}
+.dark-mode{
+  color: #030303;
+}

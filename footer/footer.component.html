@@ -1,0 +1,121 @@
+<div  *ngIf="isShowForm" class="container bg" >
+    <i (click)="closeForm()" class="bx bx-window-close " style="color: #6eff8e;"></i>
+    <div class="py-5 text-center">
+        
+      <h1 class="col2">Contact Form <i class='bx bxs-message-dots bx-rotate-180 bx-tada ' style='color:#9eef96'  ></i></h1>
+      <p class="lead col1">Feel free to reach out to us by filling out the form below. Whether you have a question, need assistance, or want to discuss a project, we are here to help. Please ensure all required fields are completed before submitting the form to avoid any errors.</p>
+      
+    </div>
+
+    <div class="row box pos" >
+    
+      <div class="col-md-8 order-md-1">
+        <h4 class="mb-3">Contact Form</h4>
+        <form class="needs-validation" novalidate="">
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="firstName">First name</label>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+              <div class="invalid-feedback">
+                Valid first name is required.
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="lastName">Last name</label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+              <div class="invalid-feedback">
+                Valid last name is required.
+              </div>
+            </div>
+          </div>
+
+        
+
+          <div class="mb-3">
+            <label for="email">Email <span class="text-warning" >(Optional)</span></label>
+            <input type="email" class="form-control" id="email" placeholder="you&#64;example.com">
+            <div class="invalid-feedback">
+              Please enter a valid email address for shipping updates.
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1">Your question:</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          
+          
+          </div>
+  
+         
+          
+          <hr class="mb-4">
+          <button class="btn " style="background-color: #92ff92; width:20%;float:right" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+ 
+  </div>
+
+<footer class="container pt-5">
+    <div class="container">
+        <footer class="pt-5">
+          <div class="row">
+            <div class="col-6 col-md-2 mb-3">
+                <h5>Company</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="/About-us" class="nav-link p-0 text-body-secondary link-underline-opacity-100-hover">About Us</a></li>
+                  <li class="nav-item mb-2"><a href="update-system" class="nav-link p-0 text-body-secondary link-underline-opacity-100-hover ">Careers</a></li>
+                  <li class="nav-item mb-2"><a href="update-system" class="nav-link p-0 text-body-secondary link-underline-opacity-100-hover">Press</a></li>
+                  <li class="nav-item mb-2"><a href="/Blog" class="nav-link p-0 text-body-secondary link-underline-opacity-100-hover">Blog</a></li>
+                  <li class="nav-item mb-2"><a  (click)="onClickContact()" class="nav-link p-0 text-body-secondary link-underline-opacity-100-hover">Contact</a></li>
+                </ul>
+              </div>
+              
+              <div class="col-6 col-md-2 mb-3">
+                <h5>Services</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="update-system" class="nav-link p-0 text-body-secondary link-underline-opacity-100-hover">Web Development</a></li>
+                  <li class="nav-item mb-2"><a href="update-system" class="nav-link p-0 text-body-secondary link-underline-opacity-100-hover">UI/UX Design</a></li>
+                  <li class="nav-item mb-2"><a href="update-system" class="nav-link p-0 text-body-secondary link-underline-opacity-100-hover">E-commerce Solutions</a></li>
+                  <li class="nav-item mb-2"><a href="update-system" class="nav-link p-0 text-body-secondary link-underline-opacity-100-hover">SEO Optimization</a></li>
+                  <li class="nav-item mb-2"><a href="update-system" class="nav-link p-0 text-body-secondary link-underline-opacity-100-hover">Consulting</a></li>
+                </ul>
+              </div>
+              
+              <div class="col-6 col-md-2 mb-3">
+                <h5>Support</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="update-system" class="nav-link p-0 text-body-secondary link-underline-opacity-100-hover">Help Center</a></li>
+                  <li class="nav-item mb-2"><a href="update-system" class="nav-link p-0 text-body-secondary link-underline-opacity-100-hover">FAQs</a></li>
+                  <li class="nav-item mb-2"><a href="update-system" class="nav-link p-0 text-body-secondary link-underline-opacity-100-hover">Terms of Service</a></li>
+                  <li class="nav-item mb-2"><a href="update-system" class="nav-link p-0 text-body-secondary link-underline-opacity-100-hover">Privacy Policy</a></li>
+                  <li class="nav-item mb-2"><a href="/Contact-support" class="nav-link p-0 text-body-secondary link-underline-opacity-100-hover">Contact Support</a></li>
+                </ul>
+              </div>
+              
+      
+            <div class="col-md-5 offset-md-1 mb-3">
+              <form>
+                <h5>Subscribe to our newsletter</h5>
+                <p>Monthly digest of what's new and exciting from us.</p>
+                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                  <label for="newsletter1" class="visually-hidden">Email address</label>
+                  <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                  <button class="btn " style="background-color: #92ff92                          ;" type="button">Subscribe</button>
+                </div>
+              </form>
+            </div>
+          </div>
+      
+          <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p>© 2024 WebTech Solutions. All rights reserved.</p>
+
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+  </footer>

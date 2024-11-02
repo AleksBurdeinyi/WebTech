@@ -1,0 +1,36 @@
+
+.bg-body-secondary{
+    background-image: url("https://www.numerama.com/wp-content/uploads/2022/09/ethereum.jpg");
+    background-size: 100% 100%;
+    color: white;
+}
+.bg-green{
+    background-color: #c0f80b 
+}
+.monospace{
+    font-family: monospace;
+}
+.color-p{
+    color:#8b00ff;
+}
+.box-right{
+   padding: 10% 1% 7% 1%;
+   background-color: #f04dfb;
+}
+.box-right2{
+    padding: 10% 1% 7% 1%;
+    background-color: #4df3fb
+}
+.size{
+
+   height: 3rem;
+    border: 5px solid #c0f80b;
+}
+.my-img{
+    border-radius: 20px;
+    box-shadow: 13px -9px 20px 20px #0000003b;
+}
+.text-body-emphasis {
+  
+    color: #607D8B !important;
+}

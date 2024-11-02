@@ -1,0 +1,9 @@
+.card{
+    width: 50%;
+    transform: translateX(50%);
+    margin: 21% 0% 21% 0%;
+}
+.card-body{
+    background-color: #f4ff0a40;
+    text-align: center;
+}

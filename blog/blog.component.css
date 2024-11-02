@@ -1,0 +1,16 @@
+.jumbotron{
+    background-color: #000000;
+    padding: 1%;
+    margin-bottom: 2%;
+    box-shadow: 6px -6px 20px 0px #000000;
+    border: 19.25px solid #92ffb1;
+}
+p{
+    color: #003602;
+}
+h1 ,h2{
+    color: #48ff4e;
+}
+.but{
+    background-color: #92ff92 !important;
+}

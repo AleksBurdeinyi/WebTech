@@ -1,0 +1,654 @@
+
+
+.weather-cont{
+    /* height: 57vh; */
+    background-color: rgba(97, 129, 159, 0.791);
+    padding: 4%;
+    border-radius: 10px;
+    backdrop-filter: blur(30px);
+    /* width: 20vw; */
+    /* background-image: url('https://img.freepik.com/premium-photo/sleep-wallpaper_1091302-9902.jpg');
+    background-repeat: no-repeat;
+    
+    background-size: cover; */
+}
+.topBoxWether{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search{
+    font-size: 2rem;
+    cursor: pointer;
+}
+.search:hover{
+    color:grey;
+}
+.inputSearch{
+    border-radius: 7px;
+    border: 1px solid rgb(142, 169, 204);
+    text-align: center;
+    /* background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd3pl5Tr5oV_iPcmRCpK4xRdGZ6g3nivLeLOuWRlOduLDo6_fq1bOMkxG4_ic9LCtSiJk&usqp=CAU'); */
+    background-size: contain;
+    background-repeat: no-repeat;
+    color:#fffefe;
+    background-color: #0519338f;
+    font-size: 1.3rem;
+    width: 70%;
+    padding:5px 30px 5px 30px;
+    margin-right: 5%;
+}
+
+
+
+.weatherStan{
+    height: 7%;
+    width: 40%;
+}
+.weatherBlock{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+.curentTemp{
+    font-family: monospace;
+    height: 8rem;
+    text-align: center;
+
+    color: white;
+    font-family: monospace
+}
+.wk{
+    color:rgb(234, 97, 97)
+}
+span{
+    vertical-align: super;
+}
+#weatherStan{
+    font-size: 6rem;
+  
+
+}
+.contWeek{
+  color: white;
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: row;
+  overflow-y: hidden;
+  height: 20%;
+  overflow-x: auto;
+}
+.minTemp{
+    color:grey
+}
+#dayStan{
+    font-size: 1.2rem;
+}
+.weather-day {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.3rem;
+  /* background-color: rgba(128, 128, 128, 0.278); */
+  padding: 18%;
+  border-radius: 15px;
+  width: 20%;
+  min-width: 25%;
+  box-sizing: border-box;
+  height: 15vh;
+  font-size: 1.5rem;
+  
+  border: 1px solid #ffffff2b;
+}
+
+.humD{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:#ffffff;
+    font-weight: 500;
+}
+.boxPar{
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+
+} 
+.boxFotW{
+    display: flex;
+    justify-content: space-between;
+    margin: 5%;
+} .boxFotW i{
+    font-size: 3rem;
+}
+/* css icon color */
+.bx-cloud-light-rain {
+    color: #3a71b7; /* Синьо-сірий, що символізує дощові хмари */
+    font-size: 2.5rem;
+    filter: drop-shadow(2px 4px 6px white);
+  }
+  
+  .bx-cloud-drizzle {
+    color: #a6c1e3; /* Світло-блакитний для легкого дощу */
+  }
+  
+  .bx-cloud-lightning {
+    color: #f2e635; /* Жовтий для блискавок */
+  }
+  
+  .bx-cloud-snow {
+    color: #ffffff; /* Білий, що символізує сніг */
+  }
+  
+  .bx-fog {
+    color: #8e9eab; /* Світло-сірий для туману */
+  }
+  
+  .bx-smoke {
+    color: #6e6e6e; /* Темно-сірий для диму */
+  }
+  
+  .bx-haze {
+    color: #b0bec5; /* Сіро-блакитний для серпанку */
+  }
+  
+  .bx-dust {
+    color: #d8b45b; /* Світло-коричневий для пилу */
+  }
+  
+  .bx-fog-alt {
+    color: #9e9e9e; /* Світло-сірий для альтернативного туману */
+  }
+  
+  .bx-sand {
+    color: #d2b48c; /* Піщано-бежевий для піску */
+  }
+  
+  .bx-ash {
+    color: #a9a9a9; /* Темно-сірий для попелу */
+  }
+  
+  .bx-wind {
+    color: #81a4cd; /* Світло-блакитний для вітру */
+  }
+  
+  .bx-tornado {
+    color: #545454; /* Темно-сірий для торнадо */
+  }
+  .curentDay{
+    border: 1p solid yellow;
+  }
+  .today {
+    border: 1px solid #fff900;
+    background-color: rgb(139 246 69 / 10%)
+  }
+
+
+
+
+
+.first-line{
+  display: flex;
+    flex-direction: row;
+    margin-bottom: 3%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+
+
+.block-text{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.wrapper{
+  width: 20%;
+  /* background: #11548a87; */
+  background-image: url("https://static.vecteezy.com/system/resources/previews/015/360/839/non_2x/abstract-smoke-steam-moves-on-a-black-background-the-concept-of-aromatherapy-isolated-white-fog-on-the-black-background-smoky-effect-for-photos-and-artworks-beautiful-grey-watercolor-grunge-vector.jpg");
+  box-shadow: 0px 15px 35px -5px rgb(0 0 0);
+  backdrop-filter: blur(30px);
+  border: 1px solid #ffffff2b;
+  /* margin: 0 4% 0 0%; */
+  padding: 2%;
+  border-radius: 22px;
+  font-weight: 700;
+}
+.first-block{
+  margin-bottom: 10%;
+}
+.block1{
+  background-image: url("https://www.shutterstock.com/shutterstock/videos/12555050/thumb/1.jpg?ip=x480");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.block2{
+
+  background-image: url("https://scottjdavies.com/wp-content/uploads/2022/03/dark-2568998_1280.jpg?w=1280");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.block3{
+
+  background-image: url("https://st2.depositphotos.com/8881578/42363/i/600/depositphotos_423630014-stock-photo-abstract-futuristic-technology-polygonal-shapes.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.wrapper-second{
+  
+  backdrop-filter: blur(17px);
+  /* background: #11548a87; */
+  box-shadow: 0px 15px 35px -5px rgb(0 0 0);
+  border-radius: 22px;
+  /* margin: 0 4% 0 4%; */
+  padding: 2%;
+  font-weight: 700;
+  color: #bebebe;
+width:15%;
+ 
+ border:1px solid #80808030;}
+.block-weatherC{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15% 0 14% 0;
+}
+.top-second{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.main-block{
+  
+  width: 100%;
+  
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top:5%;
+  padding:5%;
+}
+
+
+.crypto-inform{
+  display: flex;
+  /* background: #11548a87; */
+  background-image: url("https://st3.depositphotos.com/34784654/36364/i/600/depositphotos_363646560-stock-photo-abstract-geometric-background-design-wallpaper.jpg");
+  box-shadow: 0px 15px 35px -5px rgb(0 0 0);
+  align-items: center;
+  justify-content: space-around;
+  width: 50%;
+  color: white;
+  font-size: 1.2rem;
+  /* background-color: aqua; */
+  padding: 6%;
+  border-radius: 20px;
+  backdrop-filter: blur(30px);
+  border: 1px solid #ffffff2b;
+  margin-right: 10%;
+  background-size: contain;
+}
+.crypto-block{
+  width: 35%;
+      width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.crypto-inform img{
+  filter:drop-shadow(-1px -1px 10px rgb(84, 148, 84))
+}
+.right-blockCr{
+  display: flex;
+  align-items: center;
+  /* background: #11548a87; */
+  box-shadow: 0px 15px 35px -5px rgb(0 0 0);
+  padding: 5%;
+  border-radius: 20px;
+  width:25%;
+  background-image: url('https://st4.depositphotos.com/12659858/28771/i/600/depositphotos_287713634-stock-photo-3d-rendering-background-of-abstract.jpg');
+ 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    backdrop-filter: blur(30px);
+
+    border: 1px solid #ffffff2b;
+    justify-content: center;
+}
+.right-blockCr img{
+  height:9rem;
+}
+.first-block-crypto{
+  display: flex;
+    justify-content: space-between;
+}
+.second-line{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+
+.banner {
+           
+  text-align: center;
+
+  position: relative;
+  overflow: hidden;
+  height: 6vh;
+
+
+
+  display: flex;
+  align-items: center;
+}
+
+.marquee {
+  display: inline-block; /* Впорядкування для анімації */
+  white-space: nowrap; /* Запобігання переносу рядка */
+  animation: marquee 65s linear infinite; /* Анімація руху */
+  position: absolute; /* Позиціювання */
+  left: 100%; /* Початкова позиція */
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+.box-crypto {
+ 
+  padding: 9px;
+  margin: 8px;
+  text-align: center;
+ 
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.box-crypto img {
+  width: 4.5rem;
+  height: 3.5rem;
+}
+
+.box-price {
+  font-weight: bold;
+    text-align: right;
+    margin: 15%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 0.2rem;
+}
+
+/* Додати ефект при наведенні */
+.box-crypto:hover {
+  transform: scale(1.05); /* Збільшення при наведенні */
+}
+
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+  
+  margin: auto;
+  align-items: center;
+  flex-direction: row;
+}
+.crypto-bottom{
+  padding: 10% 5% 10% 5%;
+  backdrop-filter: blur(30px);
+  border: 1px solid #ffffff2b;
+  /* background: #11548a87; */
+  background-image: url("https://st3.depositphotos.com/2124563/33636/v/600/depositphotos_336363974-stock-illustration-seamless-pattern-with-the-image.jpg");
+  box-shadow: 0px 15px 35px -5px rgb(0 0 0);
+  margin-top: 5%;
+  border-radius: 20px;
+  background-size: cover
+}
+.search-crypto{
+    
+  backdrop-filter: blur(30px);
+  /* background: #11548a87; */
+  background-image: url("https://st.depositphotos.com/34629226/54204/i/600/depositphotos_542046610-stock-photo-many-irregular-small-dots-lines.jpg");
+background-size: contain;
+box-shadow: 0px 15px 35px -5px rgb(0 0 0);
+  border: 1px solid #ffffff2b;
+  /* padding: 0%; */
+  padding: 1.03rem;
+  margin-bottom: 5%;
+  border-radius: 20px;
+}
+.search-crypto-box input{
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.4em;
+  padding-left: 3.8rem;
+  background: none;
+  font-family: inherit;
+  padding: 1.3% 0 1% 5%;
+
+  color: #f5f5f5;
+  outline: none;
+}
+.search-crypto-box input::placeholder{
+ color: rgb(255, 255, 255);
+}
+.search-crypto-box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 4% 0 4%
+}
+#searchCrypto{
+  cursor: pointer;
+}
+.metricks{
+  margin-top:30% ;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.metricks img{
+  height:5rem;
+}
+.box-digital{
+  width: 25%;
+  display: flex;
+ 
+    flex-direction: column;
+    justify-content: space-between;
+}
+ .telegram  img{
+  height: 5rem;
+}
+.instagram img{
+  height: 5rem;
+}
+.instagram{
+  padding: 5%;
+    backdrop-filter: blur(25px);
+    border-radius: 20px;
+    /* background: #11548a87; */
+    background-image: url("https://st4.depositphotos.com/3503231/22063/v/600/depositphotos_220636960-stock-illustration-black-polygonal-mosaic-background-creative.jpg");
+    background-size: contain;
+    box-shadow: 0px 15px 35px -5px rgb(0 0 0);
+    border: 1px solid #80808030;
+}
+
+.telegram{
+  padding: 5%;
+    backdrop-filter: blur(25px);
+    border-radius: 20px;
+    border: 1px solid #80808030;
+    /* background: #11548a87; */
+    background-size: contain;
+    background-image: url("https://st4.depositphotos.com/3503231/22063/v/600/depositphotos_220636960-stock-illustration-black-polygonal-mosaic-background-creative.jpg");
+    box-shadow: 0px 15px 35px -5px rgb(0 0 0);
+}
+.first-lineD{
+  display: flex;
+ 
+    justify-content: space-between;
+  
+}
+.digital-bottom{
+ 
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(40px);
+    /* background: #11548a87; */
+    background-image: url("https://st4.depositphotos.com/3503231/22063/v/600/depositphotos_220636960-stock-illustration-black-polygonal-mosaic-background-creative.jpg");
+    background-size: contain;
+    box-shadow: 0px 15px 35px -5px rgb(0 0 0);
+    border: 1px solid #80808030;
+    border-radius: 20px;
+}
+
+.digital-bottom img{
+  padding: 7%;
+  height: 13rem;
+ 
+
+}
+@keyframes pulse-grow {
+  from {
+    transform: scale(1);  
+  }
+  to {
+    transform: scale(1.1);  
+  }
+}
+
+.pulse-grow {
+  display: inline-block;
+
+  
+  -webkit-tap-highlight-color: transparent; 
+  transform: translateZ(0);  
+  -webkit-font-smoothing: antialiased;  
+
+  &:hover {
+    animation-name: pulse-grow;
+    animation-duration: 0.5s;  
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+}
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+  margin: 5%;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 170, 255);
+  border-radius: 10px;
+}
+
+.box-music{
+  font-family: "Bitteer", serif;
+    color: #acb8cc;
+    font-weight: 400;
+}
+
+
+.first-line div {
+  flex: 0 1 calc(20% - 1rem); /* 2 блоки в ряд для ширини менше 768px */
+}
+
+
+
+@media (max-width: 1250px) {
+  .first-line div {
+      flex: 0 1 calc(50% - 10px); 
+    
+  }
+  .first-line {
+    gap:1rem;
+  }
+}
+@media (max-width: 480px) {
+  .first-line div{
+      flex: 0 1 100%; 
+      padding: 2% 5% 2% 5%;
+  }
+  .weather-day{
+    min-width: 50%;
+    
+    height: 18vh;
+  }
+  .first-block-crypto{
+    align-items: center;
+  }
+  .crypto-inform{
+    flex-wrap: wrap;
+    justify-content: center
+  }
+
+}
+
+@media (max-width: 1670px) {
+  .second-line div{
+    flex: 0 1 calc(50% - 10px);
+   
+  }
+  .second-line, .crypto-block, .box-digital, .box-music{
+    margin-bottom: 2rem;
+   
+  }
+  .first-lineD{
+    margin-bottom: 2rem;
+  }
+  .first-lineD{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 3rem;
+  }
+}
+@media (max-width: 1120px) {
+  .second-line div{
+    flex: 0 1 calc(100% - 10px);
+  }
+  .crypto-inform{
+    min-width: 60%;
+  }
+
+}
+@media  (max-width:500px) {
+  .right-blockCr{
+    padding: 15% 0% 15% 0%
+  }
+  .box-crypto img{
+    height: 3rem;
+    width:3rem;
+
+  }
+}
+@media  (max-width:540px) {
+  .first-lineD{
+    flex-wrap: wrap;
+  }
+}

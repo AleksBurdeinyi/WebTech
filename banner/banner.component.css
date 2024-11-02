@@ -1,0 +1,72 @@
+.banner {
+           
+    text-align: center;
+    /* padding: 10px; */
+    position: relative;
+    overflow: hidden;
+    height: 6vh;
+    /* background-image:url('https://media.istockphoto.com/id/1426324256/vector/abstract-futuristic-galaxy-background-vector-dark-modern-illustration-with-stars-and-lines.jpg?s=612x612&w=0&k=20&c=i_q0gf1dvf2vcTtqknISeTwdRS7NHUm3hlXEmMFxVFo=');
+   */
+   background: rgb(2,0,36);
+   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    width: 100vw;
+    display: flex;
+    align-items: center;
+}
+
+.marquee {
+    display: inline-block; /* Впорядкування для анімації */
+    white-space: nowrap; /* Запобігання переносу рядка */
+    animation: marquee 15s linear infinite; /* Анімація руху */
+    position: absolute; /* Позиціювання */
+    left: 100%; /* Початкова позиція */
+}
+
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+.box-crypto {
+   
+    padding: 9px;
+    margin: 8px;
+    text-align: center;
+   
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.box-crypto img {
+    width: 50px;
+    height: 50px;
+    clip-path: circle(60%);
+    background-color: white;
+    
+}
+
+.box-price {
+    font-weight: bold;
+    
+    text-align: right;
+    margin: 15%;
+    color:white;
+}
+
+/* Додати ефект при наведенні */
+.box-crypto:hover {
+    transform: scale(1.05); /* Збільшення при наведенні */
+}
+
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 800px;
+    margin: auto;
+    align-items: center;
+    flex-direction: row;
+}

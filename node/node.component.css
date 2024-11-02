@@ -1,0 +1,21 @@
+/* .box3{
+    background-image: url("");
+} */
+
+.bg-grad2{
+    background-color: #151515;
+    color:black;
+}
+
+.my-bg {
+  
+    background-color: #92fa92 !important;
+}
+.text-body-secondary {
+   
+    box-shadow: 1px 0px #c8ff13;
+}
+.card{
+    background-position: top;
+    background-repeat: no-repeat;
+}

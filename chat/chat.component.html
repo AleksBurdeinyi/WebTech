@@ -1,0 +1,38 @@
+<div class="container py-3 mt-3 box " >
+<div>
+  <img src="https://cdn-icons-png.flaticon.com/128/14751/14751931.png" class="img-fluid rounded-start" alt="...">
+</div>
+<div id="sesion" #sesion  class="mt-4">
+
+
+  <div class="container py-3">
+    <div class="container">
+        <div class="d-flex justify-content-start">
+     
+          <div class="box-gpt">
+         
+            <div class="p-3 anim">
+              <i class='bx bx-copy-alt'></i>
+              {{ text}}
+            </div>
+          </div>
+          </div>
+      </div>
+    
+     
+
+     
+  </div>
+</div>
+
+
+  <div class="pos fs-3">
+    "Привіт! Я — Ауріс. Чим можу допомогти?"
+    <div class="input-group mb-3 my-4">
+      <input type="text" [(ngModel)]="userMessage" class="form-control inp dark-input" placeholder="Messages for chat gpt" aria-label="Recipient's username" aria-describedby="button-addon2">
+      <button (click)="onSendMes()" class="btn btn-outline-secondary" type="button" id="send"><i class='bx bxs-upvote' style="width: 2rem;" ></i></button>
+    </div>
+  </div>
+
+
+  

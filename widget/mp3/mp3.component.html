@@ -1,0 +1,58 @@
+<div class="player dark-mode-shadow">
+    <div *ngIf="currentTrack"  class="current-track-info">
+        <div class="img-box">
+            <img [src]="currentTrack.cover" alt="Album cover" class="cover">
+        </div>
+     <div class="block-inform">
+      <div class="controls">
+            <div>
+                <i class='bx bxs-heart' undefined ></i>
+
+            </div>
+            <div>
+                <i class='bx bxl-youtube' style='color:#ff1414'  ></i>
+            </div>
+
+            <div (click)="prevTrack()">
+                <i class="fi fi-tc-rewind"></i>
+            </div>
+
+      
+            <div (click)="nextTrack()">
+                <i class="fi fi-tc-forward"></i>
+            </div>
+
+        </div>
+        <div class="box-control" (click)="play()">
+            <i *ngIf="!isTimerPlaying" class='bx bxl-play-store' style='color:#ffffff'  ></i>
+      
+          
+            <i   *ngIf="isTimerPlaying"  class='bx bx-stop-circle' style='color:#ffffff' ></i>
+        </div>
+        <div class="track-details">
+                 <h2 style="color: #71829e;">{{ currentTrack.name }}</h2>
+                 <h3>{{ currentTrack.artist }}</h3>
+        </div>
+      
+
+    </div> 
+    </div>
+    
+  
+    <!-- Прогрес треку -->
+    <div class="progress-container" (click)="clickProgress($event)">
+      <div class="progress" [style.width]="barWidth"></div>
+      <div class="circle" [style.left]="circleLeft"></div>
+    </div>
+  
+    <!-- Час треку -->
+    <div class="time-info">
+      <span>{{ currentTime }}</span>
+      <span>{{ duration }}</span>
+    </div>
+  
+    <!-- Елементи керування -->
+    
+    
+  </div>
+  

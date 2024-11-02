@@ -1,0 +1,77 @@
+.box-gpt{
+    width:55%;
+   
+    border-radius: 1.5rem;
+    background-color: #92fa92;
+
+    color: #003475;
+}
+ .cointainer .box-user{
+    width: 55%;
+    background-color: #9c58ff!important;
+    
+    border-radius: 1rem;
+    color: white;
+}
+.pos{
+    width: 50%;
+    margin:5% 0 15% 0;
+    text-align: center;
+    color: #92fa92;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.inp{
+    padding: 1.5% 3% 1.5% 3%;
+}
+.inp::placeholder{
+    color: #003475;
+}
+.inp:focus {
+    outline: none; /* Приховує стандартне обведення при фокусі */
+    border-color: #007bff00; /* Зміна кольору рамки при фокусі */
+    box-shadow: 0 0 2rem rgba(0, 166, 163, 0.416); /* Додає тінь для виділення інпуту */
+}
+
+
+.input-group .btn {
+    
+    background-color: #92fa92;
+}
+#sesion{
+    height: 40vh;
+    overflow-y: auto;
+    width: 100%;
+   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-Iuo8bcHqbCfcxGsS-faSERzkjtZXJYzqYA&s");
+  
+  
+}
+.p-3 i{
+    float:inline-end;
+    color: #00446b ;
+}
+/* Кастомізація скроллбара для Webkit (Chrome, Safari) */
+#sesion::-webkit-scrollbar {
+    width: 21px; /* Ширина скроллбара */
+}
+
+#sesion::-webkit-scrollbar-track {
+    background: #4b575d; /* Колір треку скроллбара */
+    border-radius: 10px;
+}
+
+#sesion::-webkit-scrollbar-thumb {
+    background-color: #ffffff; /* Колір ползунка скроллбара */
+    border-radius: 10px;
+    border: 3px solid #4b575d; /* Колір рамки ползунка */
+}
+
+/* Для Firefox */
+#sesion {
+    scrollbar-width: thin; /* Тонка ширина скроллбара */
+    scrollbar-color: #ffffff #4b575d; /* Колір ползунка і треку для Firefox */
+}

@@ -1,0 +1,27 @@
+.link-underline-opacity-100-hover:hover {
+    text-decoration: underline;
+    text-decoration-color: rgba(0, 0, 0, 1); /* Чорне підкреслення */
+  }
+  .pos{
+    justify-content: center;
+  }
+  .bx-window-close{
+    font-size: 3rem;
+    float: right;
+    cursor: pointer;
+  }
+  .bg{
+    padding: 2%;
+    background-color: black;
+    color: white;
+    margin-top: 2%;
+    box-shadow: -3px 0px 20px 20px #d2ffcd;
+
+  }
+
+
+.bx-window-close:hover{
+  color:white;
+
+
+}

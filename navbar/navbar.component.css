@@ -1,0 +1,41 @@
+.dropdown-item{
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+.dropdown-item:hover{
+    background-color: aliceblue;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+
+i{
+    height: 1.2rem;
+}
+.nav-link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+img{
+    height:1rem ;
+}
+.navbar{
+backdrop-filter: blur(20rem);
+border-bottom: 3px solid #8eff8e;
+}
+.logo{
+    height: 4rem;
+    margin-right: 5%;
+}
+@media (max-width: 992px) {
+    .logo {
+            display: none;
+    }
+}

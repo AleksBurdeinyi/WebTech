@@ -1,0 +1,20 @@
+<!-- <app-banner></app-banner>
+<app-map></app-map>
+<app-widget></app-widget> -->
+<!-- <app-mainpage></app-mainpage> -->
+<!-- Лоадер -->
+
+<!-- Лоадер -->
+
+    <app-loader [ngClass]="{'hidden': !showLoader}"></app-loader>
+
+  
+ 
+  <div [ngClass]="{'fade-in': !showContent, 'show-content': showContent}">
+    <app-navbar></app-navbar>
+    <router-outlet></router-outlet>
+    <app-footer></app-footer>
+    <app-switch></app-switch>
+  </div>
+  
+  
