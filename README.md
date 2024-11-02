@@ -22,8 +22,8 @@ To get your project up and running, follow these steps:
 1. **OpenWeather API Key**:
    - Sign up at [OpenWeather](https://openweathermap.org/appid) to obtain your API key.
    - Once you have your API key, go to the relevant component in your Angular project where you will use it.
-   - Update the `apiKey` variable in your component:
-     ```widget.component.ts
+   - Update the `apiKey` variable in your component widget.component.ts
+     ```
      apiKey: string = "YOUR_API_KEY"; // Replace with your OpenWeather API key
      ```
 
