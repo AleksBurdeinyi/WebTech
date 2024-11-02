@@ -5,8 +5,12 @@
 # WebTech
 
 **WebTech** is a website that provides users with information about cryptocurrencies, nodes, testnets, and integration with ChatGPT. It is designed for those who want to learn more about the world of cryptocurrencies and stay updated with the latest news and guides.
-
-## Features
+The site is fully optimized for all devices, ensuring a seamless experience whether you are accessing it from a desktop, tablet, or smartphone.📱
+<div style="display: flex; justify-content: space-between;">
+    <img src="img/main.png" alt="Зображення 1" width="30%">
+    <img src="img/main2.png" alt="Зображення 2" width="30%">
+    <img src="img/main3.png" alt="Зображення 3" width="30%">
+</div>
 
 The website offers the following sections:
 
@@ -21,49 +25,98 @@ The website offers the following sections:
 
 ### 1. **Switch Component**
 - Allows users to toggle between themes (light and dark mode).
+<div>
+    <img src="img/switch.png" alt="Switch Component" width="30%">
+</div>
 
 ### 2. **About Us Component**
 - Provides information about the team and the project's goals.
+<div>
+    <img src="img/about.png" alt="About Us Component" width="30%">
+</div>
 
 ### 3. **Banner Component**
 - Displays cryptocurrency prices, refreshing automatically whenever the page is reloaded.
 
 ### 4. **Blog Component**
 - Users can read and update information regarding the site.
+<div>
+    <img src="img/blog.png" alt="Blog Component" width="30%">
+</div>
 
 ### 5. **Footer Component**
 - A footer displayed at the bottom of every page for additional information and links.
+<div>
+    <img src="img/footer.png" alt="Footer Component" width="30%">
+</div>
 
 ### 6. **Chat Component**
 - An interactive ChatGPT component where users can ask questions and receive answers.
+<div>
+    <img src="img/chatGpt.png" alt="Chat Component" width="30%">
+</div>
 
 ### 7. **Main Page Component**
 - The homepage of the website, providing an overview of features and news.
+<div style="display: flex; justify-content: space-between;">
+    <img src="img/main.png" alt="Main Page" width="30%">
+    <img src="img/main2.png" alt="Main Page 2" width="30%">
+    <img src="img/main3.png" alt="Main Page 3" width="30%">
+</div>
 
 ### 8. **Loader Component**
 - Displays a loading icon whenever content is being fetched or the application is processing.
+<div>
+    <img src="img/loader.png" alt="Loader Component" width="30%">
+</div>
 
 ### 9. **Navbar Component**
 - A navigation menu that allows users to move between different sections of the site.
 
 ### 10. **NFT Node Component**
-- Two components that provide information about NFTs (Non-Fungible Tokens) and various cryptocurrency nodes.
+- Provides information about NFTs (Non-Fungible Tokens) and various cryptocurrency nodes.
+<div>
+    <img src="img/nft.png" alt="NFT Node Component" width="30%">
+</div>
 
 ### 11. **Page Not Found Component**
 - A 404 error page that is shown when a user navigates to a non-existent route.
 
 ### 12. **Support Component**
 - A section where users can submit questions, which are sent automatically through GmailJS.
+<div>
+    <img src="img/contactform.png" alt="Support Component" width="30%">
+</div>
 
 ### 13. **Update Component**
 - Displays a message indicating that work is in progress and informs users on the main page.
+<div>
+    <img src="img/update.png" alt="Update Component" width="30%">
+</div>
 
 ### 14. **Widget/MP3 Component**
 - A component that combines cryptocurrency information with weather updates and music playback.
+<div>
+    <img src="img/dashboard.png" alt="Widget/MP3 Component" width="30%">
+</div>
+
+### 15. **Node Component**
+- A component that provides information about nodes.
+<div style="display: flex; justify-content: space-between;">
+    <img src="img/node.png" alt="Node Component" width="30%">
+    <img src="img/node1.png" alt="Node Component 1" width="30%">
+    <img src="img/node2.png" alt="Node Component 2" width="30%">
+</div>
+
+### 16. **Testnet Component**
+- A component that provides testnet information.
+<div style="display: flex; justify-content: space-between;">
+    <img src="img/testnet1.png" alt="Testnet Component" width="50%">
+    <img src="img/testne2.png" alt="Testnet Component 2" width="50%">
+</div>
 
 ## Getting Started
-
-To get your project up and running, follow these steps:
+## Getting StartedTo get your project up and running, follow these steps:
 
 ### API Keys
 
